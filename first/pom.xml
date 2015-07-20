@@ -1,19 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
+<!-- +===========================================================================
+	 1．POM 基本設定情報
+	 +=========================================================================== -->
+  <parent>
+    <groupId>com.whz.main</groupId>
+    <artifactId>superpom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent> 
   <groupId>com.whz.main</groupId>
   <artifactId>first</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-
+ <!-- +===========================================================================
+     2.基本設定情報
+     +=========================================================================== --> 
   <name>first</name>
-  <url>http://maven.apache.org</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+<!-- +===========================================================================
+     3.依存ファイルの定義
+     +=========================================================================== -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
